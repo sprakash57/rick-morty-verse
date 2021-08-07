@@ -1,0 +1,12 @@
+.errorPage {
+    width: fit-content;
+    border: 1px solid var(--black1);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2rem auto;
+    color: var(--white);
+}
+.errorPage ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
