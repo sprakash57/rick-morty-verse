@@ -14,7 +14,7 @@
     position: relative;
 }
 .cardBody {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     text-align: center;
 }
 .cardBody h3 {

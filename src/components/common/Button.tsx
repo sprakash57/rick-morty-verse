@@ -1,7 +1,8 @@
+import React from 'react';
 import { classnames } from '../../helpers/utils';
 import styles from '../../styles/components/common/Button.module.css';
 
-type Props = {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label: string;
     clickCb: () => void;
     className?: string;
@@ -10,9 +11,9 @@ type Props = {
 const Button = ({ label, clickCb, className, ...rest }: Props) => {
     return (
         <button
+            {...rest}
             className={classnames(styles.button, className)}
             onClick={clickCb}
-            {...rest}
         >
             {label}
         </button>
