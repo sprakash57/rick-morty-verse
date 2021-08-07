@@ -1,6 +1,12 @@
 :root {
   --black1: hsl(218, 13%, 16%);
   --black2: hsl(218, 11%, 26%);
+  --green2: hsl(120, 60%, 45%);
+  --green1: hsl(120, 100%, 25%);
+  --red2: hsl(0, 60%, 45%);
+  --red1: hsl(0, 100%, 25%);
+  --gray2: hsl(0, 0%, 62%);
+  --gray1: hsl(0, 0%, 42%); 
   --white: hsl(0, 0%, 100%);
   --dark-shadow: hsla(0, 0%, 0%, 0.2);
 }

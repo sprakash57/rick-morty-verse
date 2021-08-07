@@ -21,6 +21,9 @@ const Character = ({ character }: { character: CharacterResponse }) => {
                 <p>Last seen at</p>
                 {characterLocation}
             </section>
+            <section className={styles.fullProfile}>
+                <button className={styles[status]}>Full Profile</button>
+            </section>
         </article>
     )
 }
