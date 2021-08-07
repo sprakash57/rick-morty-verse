@@ -1,12 +1,3 @@
-.Alive {
-    background-image: linear-gradient(115deg, var(--green1), var(--green2));
-}
-.Dead {
-    background-image: linear-gradient(115deg, var(--red1), var(--red2));
-}
-.unknown {
-    background-image: linear-gradient(115deg, var(--gray1), var(--gray2));
-}
 .imageBg {
     padding: 0.5rem;
     height: 100px;

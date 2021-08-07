@@ -1,0 +1,20 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 0%, 0.8);
+  }
+  .modalContainer {
+    width: 350px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 hsla(0, 85%, 87%, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 99;
+  }

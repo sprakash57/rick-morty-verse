@@ -1,0 +1,43 @@
+.profileContainer {
+    position: relative;
+}
+.imageBg {
+    padding: 0.5rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card {
+    width: 350px;
+    position: relative;
+}
+.cardBody {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+.cardBody h3 {
+    margin: 0;
+}
+.cardBody p {
+    font-weight: 700;
+    margin: 0.25rem 0 0 0;
+    padding: 0 0.5rem;
+}
+.image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+}
+.closeBtn {
+    position: absolute;
+    border: none;
+    outline: none;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+}

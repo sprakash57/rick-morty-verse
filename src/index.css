@@ -30,3 +30,12 @@ body::before {
   z-index: -1;
   background-color: var(--black1);
 }
+.Alive {
+  background-image: linear-gradient(115deg, var(--green1), var(--green2));
+}
+.Dead {
+  background-image: linear-gradient(115deg, var(--red1), var(--red2));
+}
+.unknown {
+  background-image: linear-gradient(115deg, var(--gray1), var(--gray2));
+}
