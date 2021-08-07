@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { classnames } from "../helpers/utils";
 import styles from "../styles/components/Profile.module.css";
+import Episode from "./Episode";
 
 type Props = {
     profile: {
@@ -10,12 +11,13 @@ type Props = {
         characterOrigin: React.ReactNode,
         species: string;
         status: string;
+        episodeParam: string;
     };
     onClose: () => void;
 }
 
 const Profile = forwardRef(({ onClose, profile }: Props, ref) => {
-    const { name, image, characterLocation, characterOrigin, species, status } = profile;
+    const { name, image, characterLocation, characterOrigin, species, status, episodeParam } = profile;
 
     return (
         //@ts-ignore
@@ -33,6 +35,7 @@ const Profile = forwardRef(({ onClose, profile }: Props, ref) => {
                     <p>Last seen at</p>
                     {characterLocation}
                 </section>
+                <Episode param={episodeParam} />
             </article>
         </div>
     )

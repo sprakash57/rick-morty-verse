@@ -3,11 +3,12 @@ import { fetchCharacters } from "./helpers/api";
 import { useQuery } from "react-query";
 import Character from "./components/Character";
 import styles from "./styles/App.module.css";
+import { QueryKeys } from "./constants";
 
 const App = () => {
 
   const { data, status } = useQuery(
-    ["characters"],
+    [QueryKeys.CHARACTERS],
     () => fetchCharacters()
   )
 

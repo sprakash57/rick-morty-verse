@@ -1,0 +1,12 @@
+.episodeList {
+    overflow: auto;
+    height: 200px;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+.episodeHeader {
+    text-align: center;
+    font-weight: 700;
+    margin: 0.25rem 0 0 0;
+    padding: 0 0.5rem;
+}

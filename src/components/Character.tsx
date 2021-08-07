@@ -11,9 +11,12 @@ const Character = ({ character }: { character: CharacterResponse }) => {
     const [isOpen, setIsOpen] = useState(false);
     const profileRef = useModalRef(() => setIsOpen(false));
 
-    const { name, image, species, status, location, origin } = character;
+    const { name, image, species, status, location, origin, episode } = character;
+    // Do not trigger origin/location api if no url found. Instead render unknown.
     const characterOrigin = origin.url ? <Location name={origin.name} url={origin.url} /> : <small>unknown</small>;
     const characterLocation = location.url ? <Location name={location.name} url={location.url} /> : <small>unknown</small>;
+    // return comma-separated interger values. It will be used to fetch all concerned episodes in one call.
+    const episodeParam = episode.map((ep: string) => ep.split("/").slice(-1)[0]).join(",");
 
     const toggleModal = () => {
         setIsOpen((isOpen) => !isOpen);
@@ -37,7 +40,7 @@ const Character = ({ character }: { character: CharacterResponse }) => {
             </section>
             <Modal isOpen={isOpen}>
                 <Profile
-                    profile={{ name, image, species, status, characterOrigin, characterLocation }}
+                    profile={{ name, image, species, status, characterOrigin, characterLocation, episodeParam }}
                     ref={profileRef}
                     onClose={toggleModal}
                 />

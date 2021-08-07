@@ -28,3 +28,4 @@ interface Info {
     next: string | null;
     prev: string | null;
 }
+type EpisodeResponse = { id: number, name: string }[] | { name: string };
