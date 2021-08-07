@@ -1,0 +1,10 @@
+.nav {
+    color: white;
+}
+.nav h1 {
+    font-family: cursive, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+}
