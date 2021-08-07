@@ -1,5 +1,6 @@
 import { classnames } from "../helpers/utils";
 import styles from '../styles/components/Character.module.css';
+import Button from "./common/Button";
 import Location from "./Location";
 
 const Character = ({ character }: { character: CharacterResponse }) => {
@@ -7,6 +8,8 @@ const Character = ({ character }: { character: CharacterResponse }) => {
     const { name, image, species, status, location, origin } = character;
     const characterOrigin = origin.url ? <Location name={origin.name} url={origin.url} /> : <small>unknown</small>;
     const characterLocation = location.url ? <Location name={location.name} url={location.url} /> : <small>unknown</small>;
+
+    const openModal = () => { }
 
     return (
         <article className={styles.card}>
@@ -22,7 +25,7 @@ const Character = ({ character }: { character: CharacterResponse }) => {
                 {characterLocation}
             </section>
             <section className={styles.fullProfile}>
-                <button className={styles[status]}>Full Profile</button>
+                <Button label="Full Profile" clickCb={openModal} className={styles[status]} />
             </section>
         </article>
     )

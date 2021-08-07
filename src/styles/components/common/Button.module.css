@@ -1,0 +1,10 @@
+.button {
+    padding: 1rem;
+    text-transform: capitalize;
+    border-radius: 20px;
+    color: var(--white);
+    font-family: cursive;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
