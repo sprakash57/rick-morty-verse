@@ -22,14 +22,26 @@ const Navigation = ({ page, info, isPrevData, onNavigate }: Props) => {
             <header>
                 <h1>RickMortyVerse</h1>
             </header>
-            <section className={styles.btnContainer}>
-                <Button label="First" clickCb={() => handleClick("first")} disabled={!info.prev} />
+            <section className={styles.btnContainer} aria-label="Page Navigation">
+                <Button label="First" clickCb={() => handleClick("first")} disabled={!info.prev} tabIndex={0} />
                 <div className={styles.prevNext}>
-                    <Button clickCb={() => handleClick("prev")} label="<" disabled={!info.prev} />
+                    <Button
+                        clickCb={() => handleClick("prev")}
+                        label="<"
+                        disabled={!info.prev}
+                        tabIndex={0}
+                        title="Previous Page"
+                    />
                     <span>{page} / {info.pages}</span>
-                    <Button clickCb={() => handleClick("next")} label=">" disabled={!info.next} />
+                    <Button
+                        clickCb={() => handleClick("next")}
+                        label=">"
+                        disabled={!info.next}
+                        tabIndex={0}
+                        title="Next Page"
+                    />
                 </div>
-                <Button label="Last" clickCb={() => handleClick("last")} disabled={!info.next} />
+                <Button label="Last" clickCb={() => handleClick("last")} disabled={!info.next} tabIndex={0} />
             </section>
         </nav>
     )

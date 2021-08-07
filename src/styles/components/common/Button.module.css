@@ -5,7 +5,6 @@
     color: var(--white);
     font-family: cursive;
     border: none;
-    outline: none;
     cursor: pointer;
 }
 .button:disabled {

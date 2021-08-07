@@ -14,6 +14,7 @@ const Loader = ({ size = 40, className = "", label, labelClassName = "" }: Props
             <div
                 className={styles.loader}
                 style={{ width: `${size}px`, height: `${size}px` }}
+                role="status"
             />
             <span className={labelClassName}>{label}</span>
         </section>

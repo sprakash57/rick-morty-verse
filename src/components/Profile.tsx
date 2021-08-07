@@ -22,7 +22,7 @@ const Profile = forwardRef(({ onClose, profile }: Props, ref) => {
     return (
         //@ts-ignore
         <div ref={ref} className={styles.profileContainer}>
-            <button onClick={onClose} className={styles.closeBtn}>X</button>
+            <button onClick={onClose} className={styles.closeBtn} aria-label="Close">X</button>
             <article className={styles.card}>
                 <section className={classnames(status, styles.imageBg)}>
                     <img src={image} alt={name} className={styles.image} />

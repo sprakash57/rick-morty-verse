@@ -27,7 +27,7 @@
     background-color: var(--white);
     min-width: 60px;
     font-size: 0.9rem;
-    box-shadow: -2px -1px 5px 7px hsl(0, 7%, 55%, 30%)
+    box-shadow: 2px 0px 3px 5px hsl(0, 7%, 55%, 30%);
 }
 .prevNext button {
     font-family: fantasy;

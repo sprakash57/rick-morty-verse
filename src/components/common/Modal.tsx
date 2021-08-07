@@ -14,7 +14,7 @@ const Modal = ({ children, isOpen }: { children: React.ReactNode, isOpen: boolea
 
     return createPortal(
         <div className={styles.overlay}>
-            <div className={styles.modalContainer}>
+            <div className={styles.modalContainer} tabIndex={-1} aria-labelledby="ProfileModalLabel">
                 <div>{children}</div>
             </div>
         </div>,
