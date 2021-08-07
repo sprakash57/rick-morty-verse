@@ -1,0 +1,62 @@
+.Alive {
+    background-image: linear-gradient(115deg, hsl(120, 100%, 25%), hsl(120, 60%, 45%));
+}
+.Dead {
+    background-image: linear-gradient(115deg, hsl(0, 100%, 25%), hsl(0, 60%, 45%));
+}
+.unknown {
+    background-image: linear-gradient(115deg, hsl(0, 0%, 42%), hsl(0, 0%, 62%));
+}
+.imageBg {
+    padding: 0.5rem;
+    height: 100px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.badge {
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 0.8rem;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 330px;
+    width: 320px;
+    position: relative;
+}
+.cardBody {
+    padding: 0 0.5rem;
+    text-align: center;
+}
+.cardBody h3 {
+    margin: 0;
+}
+.cardBody p {
+    font-weight: 700;
+    margin: 0.25rem 0 0 0;
+}
+.image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+}
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.3s ease-in-out; 
+}
+.card:hover .cardBody {
+    opacity: 0.2;
+}
+.card:hover .middle{
+    opacity: 1;
+} 
