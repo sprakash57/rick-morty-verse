@@ -19,6 +19,7 @@
 }
 .cardBody h3 {
     margin: 0;
+    font-size: 1rem;
 }
 .cardBody p {
     font-weight: 700;

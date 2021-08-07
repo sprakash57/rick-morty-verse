@@ -20,7 +20,7 @@ const Navigation = ({ page, info, isPrevData, onNavigate }: Props) => {
     return (
         <nav className={styles.nav}>
             <header>
-                <h1>RickMortyPedia</h1>
+                <h1>RickMortyVerse</h1>
             </header>
             <section className={styles.btnContainer}>
                 <Button label="First" clickCb={() => handleClick("first")} disabled={!info.prev} />
