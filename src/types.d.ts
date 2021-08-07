@@ -18,6 +18,11 @@ interface CharacterResponse {
         url: string;
     };
 }
+interface LocationResponse {
+    name: string;
+    dimension: string;
+    residents: string[];
+}
 interface Info {
     pages: number;
     next: string | null;
