@@ -4,6 +4,9 @@
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
+.episodeList li {
+    font-size: 0.9rem;
+}
 .episodeHeader {
     text-align: center;
     font-weight: 700;

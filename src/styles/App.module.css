@@ -11,3 +11,7 @@
       padding: 1rem;
   }
 }
+.loaderLabel {
+  font-size: 2rem;
+  color: var(--white);
+}

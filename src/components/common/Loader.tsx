@@ -1,14 +1,21 @@
 import { classnames } from '../../helpers/utils';
 import styles from '../../styles/components/common/Loader.module.css';
 
-const Loader = ({ size = 60, className = "", label }: { size?: number, className?: string, label?: string }) => {
+type Props = {
+    size?: number;
+    className?: string;
+    label?: string;
+    labelClassName?: string;
+}
+
+const Loader = ({ size = 40, className = "", label, labelClassName = "" }: Props) => {
     return (
         <section className={classnames(styles.loadContainer, className)}>
             <div
                 className={styles.loader}
                 style={{ width: `${size}px`, height: `${size}px` }}
             />
-            <span>{label}</span>
+            <span className={labelClassName}>{label}</span>
         </section>
     )
 }

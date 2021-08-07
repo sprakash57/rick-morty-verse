@@ -5,6 +5,7 @@ import Character from "./components/Character";
 import styles from "./styles/App.module.css";
 import { QueryKeys } from "./constants";
 import { useState } from "react";
+import Loader from "./components/common/Loader";
 
 const App = () => {
   const [page, setPage] = useState(1); // Starts from page 1.
@@ -15,7 +16,7 @@ const App = () => {
     { keepPreviousData: true } //Keep previous data in cache for smooth UI transition
   )
 
-  if (status === "loading") return <div>Loaing...</div>;
+  if (status === "loading") return <Loader label="RickMortiverse approching..." labelClassName={styles.loaderLabel} />;
 
   if (status === "success" && data) {
     const { results, info } = data;
