@@ -2,6 +2,7 @@ import { useQuery } from "react-query";
 import { EPISODE_URL, QueryKeys } from "../constants";
 import { fetchEpisodes } from "../helpers/api";
 import styles from "../styles/components/Episode.module.css";
+import Loader from "./common/Loader";
 
 const Episode = ({ param }: { param: string }) => {
 
@@ -11,7 +12,7 @@ const Episode = ({ param }: { param: string }) => {
         { cacheTime: 1000 } // Always pull fresh data on mount
     );
 
-    if (status === "loading") return <div>Loading...</div>;
+    if (status === "loading") return <Loader label="Getting Episodes..." size={10} />
 
     if (status === "success") {
         return (
