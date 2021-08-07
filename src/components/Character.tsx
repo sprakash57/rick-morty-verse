@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useModalRef } from "../helpers/hooks";
 import { classnames } from "../helpers/utils";
 import styles from '../styles/components/Character.module.css';
-import Button from "./common/Button";
-import Modal from "./common/Modal";
+import { Button, Modal } from "./common";
 import Location from "./Location";
 import Profile from "./Profile";
 

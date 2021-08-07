@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import { classnames } from "../helpers/utils";
-import styles from "../styles/components/Profile.module.css";
 import Episode from "./Episode";
+import styles from "../styles/components/Profile.module.css";
 
 type Props = {
     profile: {

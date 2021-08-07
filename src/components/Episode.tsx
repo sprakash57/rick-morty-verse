@@ -1,8 +1,8 @@
 import { useQuery } from "react-query";
 import { EPISODE_URL, QueryKeys } from "../constants";
 import { fetchEpisodes } from "../helpers/api";
+import { Loader } from "./common";
 import styles from "../styles/components/Episode.module.css";
-import Loader from "./common/Loader";
 
 const Episode = ({ param }: { param: string }) => {
 

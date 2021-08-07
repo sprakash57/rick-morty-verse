@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <App />
-    <ReactQueryDevtools initialIsOpen={false} />
+    <ReactQueryDevtools initialIsOpen={false} /> {/* Devtools won't be bundled during build */}
   </QueryClientProvider>,
   document.getElementById('root')
 );

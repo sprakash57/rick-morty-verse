@@ -1,5 +1,5 @@
 .nav {
-    color: white;
+    color: var(--white);
 }
 .nav h1 {
     font-family: cursive, sans-serif;

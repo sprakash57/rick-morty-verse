@@ -6,12 +6,12 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 2rem 3rem;
 }
+.loaderLabel {
+  font-size: 2rem;
+  color: var(--white);
+}
 @media screen and (max-width: 600px) {
   .characters {
       padding: 1rem;
   }
-}
-.loaderLabel {
-  font-size: 2rem;
-  color: var(--white);
 }

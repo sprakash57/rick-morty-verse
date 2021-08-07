@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import { fetchLocations } from "../helpers/api";
-import Loader from "./common/Loader";
+import { Loader } from "./common";
 
 const Location = ({ name, url }: { name: string, url: string }) => {
 

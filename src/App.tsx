@@ -1,12 +1,12 @@
+import { useState } from "react";
+import { useQuery } from "react-query";
 import Navigation from "./components/Navigation"
 import { fetchCharacters } from "./helpers/api";
-import { useQuery } from "react-query";
 import Character from "./components/Character";
-import styles from "./styles/App.module.css";
 import { QueryKeys } from "./constants";
-import { useState } from "react";
-import Loader from "./components/common/Loader";
+import { Loader } from "./components/common";
 import ErrorPage from "./components/ErrorPage";
+import styles from "./styles/App.module.css";
 
 const App = () => {
   const [page, setPage] = useState(1); // Starts from page 1.

@@ -1,5 +1,5 @@
+import { Button } from './common';
 import styles from '../styles/components/Navigation.module.css';
-import Button from './common/Button';
 
 type Props = {
     page: number;
